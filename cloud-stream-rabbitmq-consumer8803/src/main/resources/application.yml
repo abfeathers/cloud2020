@@ -1,5 +1,5 @@
 server:
-  port: 8802
+  port: 8803
 
 spring:
   application:
@@ -30,5 +30,5 @@ eureka:
   instance:
     lease-renewal-interval-in-seconds: 30 # 设置心跳的间隔时间，默认30
     lease-expiration-duration-in-seconds: 70 # 超过5秒间隔，默认90
-    instance-id: receive-8802.com #主机名
+    instance-id: receive-8803.com #主机名
     prefer-ip-address: true # 显示ip
