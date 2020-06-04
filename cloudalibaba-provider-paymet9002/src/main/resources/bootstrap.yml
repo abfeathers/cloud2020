@@ -1,0 +1,11 @@
+spring:
+  cloud:
+    nacos:
+      config:
+        server-addr: localhost:1111 #Nacos作为配置中心地址
+        file-extension: yml  #指定yaml格式的配置
+        group: DEV_GROUP
+        namespace: bff7654b-8947-4a69-bd87-a77b9a53465b #命名空间
+
+# ${spring.application.name}-${spring.profile.active}.${spring.cloud.nacos.config.file.extension}
+# nacos-config-client-dev.yml

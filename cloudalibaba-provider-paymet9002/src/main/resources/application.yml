@@ -7,7 +7,10 @@ spring:
   cloud:
     nacos:
       discovery:
-        server-addr: localhost:8848 #配置Nacos地址
+#        server-addr: localhost:8848 #配置Nacos地址
+        server-addr: localhost:1111 #换成nginx的1111端口，做集群
+        group: DEV_GROUP
+        namespace: bff7654b-8947-4a69-bd87-a77b9a53465b #命名空间
 
 management:
   endpoints:
